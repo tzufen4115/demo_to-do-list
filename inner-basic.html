@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE TO DO LIST</title>
+    <link rel="icon" href="./images/logo.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- importing bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body class="inner-page">
+    <div class="container">
+        <header>
+            <div class="header-wrap">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <nav>
+                        <ul class="header__menu-items">
+                            <li><a class="b-main-menu__link" href="#">王小明的代辦</a></li>
+                            <li><a class="b-main-menu__link sign-out" href="#">登出</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="todo-form">
+                <div class="add-item">
+                    <input type="text" name="input" id="input" placeholder="新增待辦事項">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
+                            src="./images/plus.png" alt="plus"></button>
+                </div>
+            </div>
+            <div class="list-area">
+                <div class="no-list-info">
+                    <p>目前尚無待辦事項</p>
+                    <img src="./images/empty-1.png" alt="empty-1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/effect.js"></script>
+</body>
+
+</html>

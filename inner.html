@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE TO DO LIST</title>
+    <link rel="icon" href="./images/logo.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- importing bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+</head>
+
+<body class="inner-page">
+    <div class="container">
+        <header>
+            <div class="header-wrap">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <nav>
+                        <ul class="header__menu-items">
+                            <li><a class="b-main-menu__link" href="#">王小明的代辦</a></li>
+                            <li><a class="b-main-menu__link sign-out" href="#">登出</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="todo-form">
+                <div class="add-item">
+                    <input type="text" name="input" id="input" placeholder="新增待辦事項">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
+                            src="./images/plus.png" alt="plus"></button>
+                </div>
+            </div>
+            <div class="list-area">
+                <div class="no-list-info">
+                    <p>目前尚無待辦事項</p>
+                    <img src="./images/empty-1.png" alt="empty-1">
+                </div>
+                <!-- <div class="list-info">
+                    <ul class="nav nav-fill">
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" aria-current="page" href="#tab01">全部</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#tab02">待完成</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" class="nav-link" href="#tab03">已完成</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab01" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="tab02" class="tab-pane fade">
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                        </div>
+                        <div id="tab03" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="list-info">
+                    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">全部</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">待完成</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">已完成</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="form-check">
+
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <span>把冰箱發霉的檸檬拿去丟</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <span>打電話叫媽媽匯款給我</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <span>整理電腦資料夾</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <span>繳電費水費瓦斯費</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <span>約vicky禮拜三泡溫泉</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <span>約ada禮拜四吃晚餐</span>
+                                </label>
+                            </div>
+
+                            <div class="list-info-all">
+                                <div class="all-items">
+                                    <p>5 個待完成項目</p>
+                                </div>
+                                <div class="all-items-delete">
+                                    <p>清除已完成項目</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/effect.js"></script>
+</body>
+
+</html>

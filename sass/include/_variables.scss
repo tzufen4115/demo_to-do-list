@@ -1,0 +1,75 @@
+
+$main-color: #333333 !default; 
+$second-color: #9F9A91 !default; 
+$header-color: #333333 !default; //h1
+$hover-color: #333333 !default; //#6596d8
+$main-txt-color:#142131 !default;
+$main-link-color:#111 !default;
+$main-link-color-hover:#222 !default;
+$bg-color: #FFD370 !default;
+$bg-sub-color: #96AECE !default;
+$bg-gray: #F0F1F2 !default;
+$btn-color: #fff !default;
+
+$arrow-color: #96AECE !default;
+$slide-dots-color: #AFC2D8 !default;
+$slide-dots-color-active: #607791 !default;
+
+$probg-color1:#FFFAA8 !default;
+
+$tablebg-color1-th:#FDF773 !default;
+$tablebg-color1:#FFFAA8 !default;
+
+
+$main-size: 16px;
+$text-size: 16px;
+$index-ti-size: 24px;
+
+
+$btn-primary-link-color: #333333 !default;
+$btn-primary-hover-color: #fff !default;
+$btn-primary-disabled-color: #595656 !default;
+
+$btn-default-link-color: #d4d0c7 !default;
+$btn-default-hover-color: #c6c0b3 !default;
+$btn-default-disabled-color: #e2e0db !default;
+
+$btn-success-link-color: #b0a7a2 !default;
+$btn-success-hover-color: #a69c97 !default;
+$btn-success-disabled-color: #bcb4b0 !default;
+
+$btn-info-link-color: #333333 !default;
+$btn-info-hover-color: #e72e35 !default; //#857777
+$btn-info-disabled-color: #bdb4b4 !default;
+
+
+$default-font-family: "Noto Sans TC", 'Arial', "微軟正黑體", \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+$table-font-family: "Noto Sans TC", 'Arial', sans-serif;
+$header-height : 34.75px;
+
+@mixin clearul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@mixin clearfloat{
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+@mixin transition{
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+@mixin notransition{
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
